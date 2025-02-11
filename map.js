@@ -1,7 +1,7 @@
 // Initialize the map
 var map = new maplibregl.Map({
     container: 'map', // container id
-    style: 'https://governmentofbc.maps.arcgis.com/sharing/rest/content/items/b1624fea73bd46c681fab55be53d96ae/resources/styles/root.json?f=pjson', // style URL
+    style: 'https://basemaps.cartocdn.com/gl/voyager-gl-style/style.json', // style URL
     center: [-127.647621, 53.726669], // starting position [lng, lat]
     zoom: 5, // starting zoom (adjusted to better fit the BC region)
 });
