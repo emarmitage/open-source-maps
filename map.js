@@ -20,3 +20,7 @@ map.on('load', () => {
     // You could do something when the map is loaded, like adding additional markers or layers.
     console.log("Map has loaded!");
 });
+
+// Add ESRI attribution
+map._controls[0].options.customAttribution += " | Powered by Esri "
+map._controls[0]._updateAttributions()
