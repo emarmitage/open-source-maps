@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Map Template</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="MapLibre map template to visualize data">
+    <meta name="keywords" content="HTML, CSS, JavaScript, MapLibre, map">
+    <meta name="author" content="Add your name here">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- MapLibre CSS -->
+    <link rel='stylesheet' href='https://unpkg.com/maplibre-gl@5.0.1/dist/maplibre-gl.css' />
+
+    <!-- Layout styles -->
+    <style>
+        body { margin: 0; padding: 0; }
+        html, body, #map { height: 100%; }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Map Template</h1>
+    </header>
+
+    <!-- Map legend -->
+    <div id="legend">
+        <h3>Map Legend</h3>
+        <ul>
+            <li><strong>Placeholder</strong>: Placeholder description</li>
+            <li><strong>Placeholder</strong>: Placeholder description</li>
+            <!-- Add other legend items here -->
+        </ul>
+    </div>
+
+    <!-- Map container -->
+    <div id="map"></div>
+
+    <!-- Map initialization script -->
+    <script src='https://unpkg.com/maplibre-gl@5.0.1/dist/maplibre-gl.js'></script>
+    <script src="./map.js"></script>
+    
+    <footer>
+        <nav>
+            <a href="./example_page.html">Example Page</a>
+        </nav>
+
+        <!-- BC Gov logo -->
+        <img src="public/images/BCID_H_rgb_pos.jpg" alt="BC Government Logo" />
+
+    </footer>
+
+</body>
+</html>
