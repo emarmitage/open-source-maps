@@ -14,8 +14,46 @@
 
     <!-- Layout styles -->
     <style>
+        /* Define the BCSans custom font */
+        @font-face {
+                    font-family: "BCSans";
+                    font-style: normal;
+                    font-weight: 400;
+                    src: url("../fonts/BcSansFont_Web/2023_01_01_BCSans-Regular_2f.woff") format("woff2"),
+                        url("../fonts/BcSansFont_Web/2023_01_01_BCSans-Regular_2f.woff2") format("woff");
+                    }
+        
         body { margin: 0; padding: 0; }
-        html, body, #map { height: 90%; }
+        html, body, #map { 
+            font-family: 'BCSans', sans-serif; 
+            height: 100%;
+            background: whitesmoke;
+        }
+
+        header{
+            padding: 1px;
+            text-align: center;
+            background: #234075;
+            color: white;
+            font-size: 16px;
+        }
+
+        #legend{
+            margin: 20px;
+            font-size: 12px;
+        }
+
+        #map {
+            border: 5px solid white; 
+            margin: 20px;
+            border-radius: 25px
+        }
+
+        footer{
+            padding: 1px;
+            background: #234075;
+        }
+
     </style>
 </head>
 
@@ -47,7 +85,7 @@
         </nav>
 
         <!-- BC Gov logo -->
-        <img src="public/images/BCID_H_rgb_pos.jpg" alt="BC Government Logo" style="width:150px", height="auto"/>
+        <img src="public/images/BCID_H_rgb_rev.png" alt="BC Government Logo" style="width:150px", height="auto"/>
 
     </footer>
 
