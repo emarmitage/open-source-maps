@@ -30,6 +30,31 @@
             background: whitesmoke;
         }
 
+        menu {
+            display: flex; 
+            list-style: none;
+            padding: 0;
+            width: 100%;
+            justify-content: flex-end;   
+        }
+
+            menu li {
+                margin: 0 10px;
+            }
+
+            li a {
+                text-decoration: none;
+                color: #234075;
+                padding: 10px 15px;
+                font-size: 14px
+            }
+
+            li a:hover {
+                background-color: #234075;
+                color: white;
+                border-radius: 25px;
+            }
+
         header{
             padding: 1px;
             text-align: center;
@@ -41,6 +66,13 @@
         #legend{
             margin: 20px;
             font-size: 12px;
+        }
+
+        #legend li {
+            list-style: none;
+            padding: 0;
+            font-size: 14px;
+            justify-content: flex-start;
         }
 
         #map {
@@ -62,6 +94,11 @@
         <h1>Map Template</h1>
     </header>
 
+    <!-- Menu Bar -->
+    <menu>
+        <li><a href="./example_page.html">Example Page</a></li>
+    </menu>
+
     <!-- Map legend -->
     <div id="legend">
         <h3>Map Legend</h3>
@@ -80,9 +117,9 @@
     <script src="./map.js"></script>
     
     <footer>
-        <nav>
+        <!-- <nav>
             <a href="./example_page.html">Example Page</a>
-        </nav>
+        </nav> -->
 
         <!-- BC Gov logo -->
         <img src="public/images/BCID_H_rgb_rev.png" alt="BC Government Logo" style="width:150px", height="auto"/>
