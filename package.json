@@ -4,6 +4,7 @@
   "description": "scripts to test out open source web mapping",
   "main": "map.js",
   "dependencies": {
+    "@bcgov/bc-sans": "^2.1.0",
     "earcut": "^3.0.1",
     "geojson-vt": "^4.0.2",
     "get-stream": "^6.0.1",
