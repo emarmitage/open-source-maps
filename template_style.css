@@ -1,0 +1,71 @@
+        /* Define the BCSans custom font */
+        @font-face {
+            font-family: "BCSans";
+            font-style: normal;
+            font-weight: 400;
+            src: url("../fonts/BcSansFont_Web/2023_01_01_BCSans-Regular_2f.woff") format("woff2"),
+                url("../fonts/BcSansFont_Web/2023_01_01_BCSans-Regular_2f.woff2") format("woff");
+            }
+
+body { margin: 0; padding: 0; }
+html, body, #map { 
+    font-family: 'BCSans', sans-serif; 
+    height: 100%;
+    background: whitesmoke;
+}
+
+menu {
+    display: flex; 
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    justify-content: flex-end;   
+}
+
+    menu li {
+        margin: 0 10px;
+    }
+
+    li a {
+        text-decoration: none;
+        color: #234075;
+        padding: 10px 15px;
+        font-size: 14px
+    }
+
+    li a:hover {
+        background-color: #234075;
+        color: white;
+        border-radius: 25px;
+    }
+
+header{
+    padding: 1px;
+    text-align: center;
+    background: #234075;
+    color: white;
+    font-size: 16px;
+}
+
+#legend{
+    margin: 20px;
+    font-size: 12px;
+}
+
+#legend li {
+    list-style: none;
+    padding: 0;
+    font-size: 14px;
+    justify-content: flex-start;
+}
+
+#map {
+    border: 5px solid white; 
+    margin: 20px;
+    border-radius: 25px
+}
+
+footer{
+    padding: 1px;
+    background: #234075;
+}
